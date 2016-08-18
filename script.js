@@ -32,6 +32,6 @@ var updateOutput = function () {
 };
 
 // when user clicks anywhere in body, update output
-$("body").on("click", function () {
+$("body").on("change", function () {
     updateOutput();
 });
