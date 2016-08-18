@@ -6,9 +6,11 @@ var updateOutput = function () {
     var green = $("#green-amount").val();
     var blue = $("#blue-amount").val();
     var fontSize = $("#text-size").val();
+    var buttonText = $("#button-text").val();
     // $("#code-to-copy").html("Corner Type: " + cornerType + "<br/>Color: ");
     $("#fancy-button").css("background-color", "rgb(" + red + ", " + green + ", " + blue + ")");
     $("#fancy-button").css("font-size", fontSize + "px");
+    $("#fancy-button").val(buttonText);
 };
 
 // when user clicks anywhere in body, update output
