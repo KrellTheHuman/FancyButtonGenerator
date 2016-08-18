@@ -7,10 +7,18 @@ var updateOutput = function () {
     var blue = $("#blue-amount").val();
     var fontSize = $("#text-size").val();
     var buttonText = $("#button-text").val();
-    // $("#code-to-copy").html("Corner Type: " + cornerType + "<br/>Color: ");
-    $("#fancy-button").css("background-color", "rgb(" + red + ", " + green + ", " + blue + ")");
-    $("#fancy-button").css("font-size", fontSize + "px");
-    $("#fancy-button").val(buttonText);
+    var fancyButton = $("#fancy-button");
+    fancyButton.css("background-color", "rgb(" + red + ", " + green + ", " + blue + ")");
+    fancyButton.css("font-size", fontSize + "px");
+    fancyButton.text(buttonText);
+    if (cornerType === "square") {
+        fancyButton.css("border-radius", "0");
+    } else if (cornerType === "rounded") {
+        fancyButton.css("border-radius", "12px");
+    } else {
+        fancyButton.css("border-radius", "100%");
+    }
+    fancyButton.css("height", fancyButton.css("width"));
 };
 
 // when user clicks anywhere in body, update output
