@@ -17,12 +17,11 @@ var updateOutput = function () {
         fancyButton.css("border-radius", "12px");
     } else {
         fancyButton.css("border-radius", "100%");
+        fancyButton.css("height", fancyButton.css("width"));
     }
-    fancyButton.css("height", fancyButton.css("width"));
 };
 
 // when user clicks anywhere in body, update output
 $("body").on("click", function () {
     updateOutput();
 });
-
