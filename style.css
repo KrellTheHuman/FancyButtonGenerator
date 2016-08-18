@@ -1,12 +1,16 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
 
-#code-box {
-
+button {
+    vertical-align: middle;
 }
 
 #code-to-copy {
-    border: 2px solid #000;
+    /*border: 2px solid #000;*/
     width: 50%;
     height: 250px;
-    text-align: left;
+    text-align: center;
     margin: auto;
 }

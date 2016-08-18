@@ -7,15 +7,43 @@
 </head>
 <body>
 
+<h1>Fancy Button Generator</h1>
+
 <div id="options">
+    <h2>Options</h2>
     <div id="corner-options">
-        <input type="radio" name="square" value="square">
+        <label for="corner-options">Corner Options:<br/>
+            <input type="radio" name="corner-option" value="square" checked>Square<br/>
+            <input type="radio" name="corner-option" value="rounded">Rounded<br/>
+            <input type="radio" name="corner-option" value="circle">Circle<br/>
+        </label>
+    </div>
+    <br/>
+    <div id="color-options">
+        Color Options [0-255]:<br/>
+        <label for="red-amount">Red Amount</label>
+        <input id="red-amount" type="number" name="red-amount" placeholder="255"/><br/>
+        <label for="green-amount">Green Amount</label>
+        <input id="green-amount" type="number" name="green-amount" placeholder="255"/><br/>
+        <label for="blue-amount">Blue Amount</label>
+        <input id="blue-amount" type="number" name="blue-amount" placeholder="255"/><br/>
+    </div>
+    <br/>
+    <div id="text-optons">
+        Button Text:
+        <input id="button-text" type="text" name="button-text" placeholder="Click Me"/><br/>
+        Text Size:
+        <input id="text-size" type="text" name="text-size" placeholder="16"/><br/>
     </div>
 </div>
+<!--corners, color, text size, button size, the text-->
 
 
 <div id="code-box">
-    <div id="code-to-copy">dummy data</div>
+    <div id="code-to-copy">
+        <button type="button" id="fancy-button">Fancy Button</button>
+    </div>
+
 </div>
 
 
