@@ -1,6 +1,13 @@
+body {
+	background-color: #D6DDE6;
+}
+
 h1 {
+	color: #3375E6;
     text-align: center;
     font-weight: bold;
+
+
 }
 
 button {
@@ -12,4 +19,11 @@ button {
     height: 250px;
     text-align: center;
     margin: auto;
+}
+
+#options {
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: : "Verdana";
 }
