@@ -33,6 +33,8 @@ var updateOutput = function () {
         fancyButton.css("border-radius", "100%");
         fancyButton.css("height", fancyButton.css("width"));
     }
+
+    $("#output").val($("#fancy-button")[0].outerHTML);
 };
 
 // when user clicks anywhere in body, update output
@@ -40,6 +42,13 @@ $("body").on("change", function () {
     updateOutput();
 });
 
+$("#copy-to-clipboard").on("click", function () {
+    var output = document.getElementById("output");
+    output.focus();
+    output.setSelectionRange(0, output.value.length);
+    document.execCommand("copy");
+    output.setSelectionRange();
+});
+
 updateOutput();
 
-$("#output").text($("button")[0].outerHTML);
