@@ -7,7 +7,12 @@ button {
     vertical-align: middle;
 }
 
-#code-to-copy {
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#button-box {
     width: 50%;
     height: 250px;
     text-align: center;

@@ -41,3 +41,5 @@ $("body").on("change", function () {
 });
 
 updateOutput();
+
+$("#output").text($("button")[0].outerHTML);

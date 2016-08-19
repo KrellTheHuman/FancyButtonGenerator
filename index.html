@@ -8,60 +8,56 @@
 <body>
 
 <h1>Fancy Button Generator</h1>
-
-<div id="options">
-    <h2>Options</h2>
-    <div id="corner-options">
-        <label for="corner-options">Corner Options:<br/>
-            <input type="radio" name="corner-option" value="square" checked>Square<br/>
-            <input type="radio" name="corner-option" value="rounded">Rounded<br/>
-            <input type="radio" name="corner-option" value="circle">Circle<br/>
-        </label>
+<div id="container">
+    <div id="options">
+        <h2>Options</h2>
+        <div id="corner-options">
+            <label for="corner-options">Corner Options:<br/>
+                <input type="radio" name="corner-option" value="square" checked>Square<br/>
+                <input type="radio" name="corner-option" value="rounded">Rounded<br/>
+                <input type="radio" name="corner-option" value="circle">Circle<br/>
+            </label>
+        </div>
+        <br/>
+        <div id="colorbtn-options">
+            Background Color Options [0-255]:<br/>
+            <label for="redbtn-amount">Red Amount</label>
+            <input id="redbtn-amount" type="number" name="redbtn-amount" placeholder="255" min="0" max="255"/><br/>
+            <label for="greenbtn-amount">Green Amount</label>
+            <input id="greenbtn-amount" type="number" name="greenbtn-amount" placeholder="255" min="0" max="255"/><br/>
+            <label for="bluebtn-amount">Blue Amount</label>
+            <input id="bluebtn-amount" type="number" name="bluebtn-amount" placeholder="255" min="0" max="255"/><br/>
+        </div>
+        <br/>
+        <div id="colortxt-options">
+            Text Color Options [0-255]:<br/>
+            <label for="redtxt-amount">Red Amount</label>
+            <input id="redtxt-amount" type="number" name="redtxt-amount" placeholder="255" min="0" max="255"/><br/>
+            <label for="greentxt-amount">Green Amount</label>
+            <input id="greentxt-amount" type="number" name="greentxt-amount" placeholder="255" min="0" max="255"/><br/>
+            <label for="bluetxt-amount">Blue Amount</label>
+            <input id="bluetxt-amount" type="number" name="bluetxt-amount" placeholder="255" min="0" max="255"/><br/>
+        </div>
+        <br/>
+        <div id="text-optons">
+            Button Text:
+            <input id="button-text" type="text" name="button-text" placeholder="Click Me"/><br/>
+            Text Size:
+            <input id="text-size" type="text" name="text-size" placeholder="16"/><br/>
+        </div>
+        <div id="size-options">
+            Button Size:
+            <select id="button-size">
+                <option value="button-small">Small</option>
+                <option value="button-med">Medium</option>
+                <option value="button-lrg">Large</option>
+            </select>
+        </div>
     </div>
-    <br/>
-    <div id="colorbtn-options">
-        Background Color Options [0-255]:<br/>
-        <label for="redbtn-amount">Red Amount</label>
-        <input id="redbtn-amount" type="number" name="redbtn-amount" placeholder="255" min="0" max="255"/><br/>
-        <label for="greenbtn-amount">Green Amount</label>
-        <input id="greenbtn-amount" type="number" name="greenbtn-amount" placeholder="255" min="0" max="255"/><br/>
-        <label for="bluebtn-amount">Blue Amount</label>
-        <input id="bluebtn-amount" type="number" name="bluebtn-amount" placeholder="255" min="0" max="255"/><br/>
-    </div>
-    <br/>
-    <div id="colortxt-options">
-        Text Color Options [0-255]:<br/>
-        <label for="redtxt-amount">Red Amount</label>
-        <input id="redtxt-amount" type="number" name="redtxt-amount" placeholder="255" min="0" max="255"/><br/>
-        <label for="greentxt-amount">Green Amount</label>
-        <input id="greentxt-amount" type="number" name="greentxt-amount" placeholder="255" min="0" max="255"/><br/>
-        <label for="bluetxt-amount">Blue Amount</label>
-        <input id="bluetxt-amount" type="number" name="bluetxt-amount" placeholder="255" min="0" max="255"/><br/>
-    </div>
-    <br/>
-    <div id="text-optons">
-        Button Text:
-        <input id="button-text" type="text" name="button-text" placeholder="Click Me"/><br/>
-        Text Size:
-        <input id="text-size" type="text" name="text-size" placeholder="16"/><br/>
-    </div>
-    <div id="size-options">
-        Button Size:
-        <select id="button-size">
-            <option value="button-small">Small</option>
-            <option value="button-med">Medium</option>
-            <option value="button-lrg">Large</option>
-        </select>
-    </div>
-</div>
-<!--corners, color, text size, button size, the text-->
-
-
-<div id="code-box">
-    <div id="code-to-copy">
+    <div id="button-box">
         <button type="button" id="fancy-button">Fancy Button</button>
+        <div id="output"></div>
     </div>
-
 </div>
 
 
