@@ -1,6 +1,6 @@
 body {
-	background-color: #EEF9FC;
 	font-family: Verdana;
+    backgroun-color: #CCCCCC;
 }
 
 h1 {
@@ -32,6 +32,10 @@ button {
 	text-align: left;
 	font-weight: bold;
 	font-size: 14px;
+    background-color: #F0FAFF;
+    border: 2px solid #18446B;
+    border-radius: 16px;
+    padding: 20px;
 }
 
 #output {
@@ -39,4 +43,6 @@ button {
     margin: 18px;
     padding: 18px;
     border: 2px solid #18446B;
+    background-color: #143F66;
+    color: #00FF33;
 }
