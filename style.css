@@ -1,6 +1,6 @@
 body {
 	background-color: #EEF9FC;
-	font-family: : Verdana;
+	font-family: Verdana;
 }
 
 h1 {
@@ -32,4 +32,11 @@ button {
 	text-align: left;
 	font-weight: bold;
 	font-size: 14px;
+}
+
+#output {
+    text-align: left;
+    margin: 18px;
+    padding: 18px;
+    border: 2px solid #18446B;
 }
