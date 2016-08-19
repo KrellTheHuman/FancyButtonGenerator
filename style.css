@@ -1,13 +1,19 @@
 body {
-	background-color: #EEF9FC;
-	font-family: Verdana;
+	font-family: 'Open Sans', sans-serif;
+    background-color: #F9F9F9;
 }
 
 h1 {
-	color: #18446B;
+	color: #F90B6D;
     text-align: center;
     font-weight: bold;
 
+
+}
+
+h2 {
+    color: #F90B6D;
+    font-weight: bold;
 
 }
 
@@ -28,10 +34,14 @@ button {
 }
 
 #options {
-	color: #18446B;
+	color: #333333;
 	text-align: left;
-	font-weight: bold;
-	font-size: 14px;
+    margin: 8px;
+    padding: 8px;
+	font-size: 11px;
+    background-color: #EDEDED;
+    border: 2px solid #EDEDED;
+    border-radius: 16px;
 }
 
 #output {
@@ -39,4 +49,6 @@ button {
     margin: 18px;
     padding: 18px;
     border: 2px solid #18446B;
+    background-color: #222;
+    color: #F90B6D;
 }
