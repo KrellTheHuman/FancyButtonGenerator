@@ -62,4 +62,3 @@ $("#copy-to-clipboard").on("click", function () {
 });
 
 updateOutput();
-
