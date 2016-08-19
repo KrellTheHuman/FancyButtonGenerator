@@ -42,12 +42,23 @@ $("body").on("change", function () {
     updateOutput();
 });
 
+var postMessage = function (msg) {
+    var message = $("#message");
+    message.append(msg);
+    message.fadeOut(3000, function () {
+        message.text("");
+        message.show();
+    });
+};
+
+
 $("#copy-to-clipboard").on("click", function () {
     var output = document.getElementById("output");
     output.focus();
     output.setSelectionRange(0, output.value.length);
     document.execCommand("copy");
     output.setSelectionRange();
+    postMessage("Copied to Clipboard");
 });
 
 updateOutput();
