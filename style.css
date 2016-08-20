@@ -22,7 +22,16 @@ h2 {
 
 button {
     vertical-align: middle;
-    margin: 18px;
+    margin-left: 18px;
+}
+
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    margin-top: 5px;
 }
 
 .lined-up-input-text {
@@ -41,11 +50,10 @@ button {
     flex-direction: row;
     margin: auto;
     padding: 36px;
-    width: 50%;
+    width: 800px;
 }
 
 #button-box {
-    width: 50%;
     height: 250px;
     text-align: center;
     margin: auto;
@@ -88,4 +96,8 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+select {
+    width: 74px;
 }

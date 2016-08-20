@@ -26,18 +26,17 @@
                 <option value="button-lrg">Large</option>
             </select>
             <br/>
-            <br/>
         </div>
         <div id="corner-options">
-            Corners:<br/>
-            <label for="square" class="lined-up-input-text">Square</label>
-            <input id="square" type="radio" name="corner-option" value="square" checked><br/>
-            <label for="rounded" class="lined-up-input-text">Rounded</label>
-            <input id="rounded" type="radio" name="corner-option" value="rounded"><br/>
-            <label for="circle" class="lined-up-input-text">Circle</label>
-            <input id="circle" type="radio" name="corner-option" value="circle"><br/>
+            <label for="corner-option" class="lined-up-input-text">Corner Type:</label>
+            <select id="corner-option">
+                <option value="square">Square</option>
+                <option value="rounded">Rounded</option>
+                <option value="circle">Circle</option>
+            </select>
+            <br/>
+            <br/>
         </div>
-        <br/>
         <div id="colorbtn-options">
             Background Color [0-255]:<br/>
             <label for="redbtn-amount" class="lined-up-input-text">Red Amount</label>
@@ -46,8 +45,10 @@
             <input id="greenbtn-amount" class="text-input-width" type="number" name="greenbtn-amount" placeholder="255" min="0" max="255"/><br/>
             <label for="bluebtn-amount" class="lined-up-input-text">Blue Amount</label>
             <input id="bluebtn-amount" class="text-input-width" type="number" name="bluebtn-amount" placeholder="255" min="0" max="255"/><br/>
+            <div class="button-container">
+                <button id="randomColorBtn" type="button">Randomize!</button>
+            </div>
         </div>
-        <br/>
         <div id="colortxt-options">
             Text Color [0-255]:<br/>
             <label for="redtxt-amount" class="lined-up-input-text">Red Amount</label>
@@ -56,8 +57,10 @@
             <input id="greentxt-amount" class="text-input-width" type="number" name="greentxt-amount" placeholder="255" min="0" max="255"/><br/>
             <label for="bluetxt-amount" class="lined-up-input-text">Blue Amount</label>
             <input id="bluetxt-amount" class="text-input-width" type="number" name="bluetxt-amount" placeholder="255" min="0" max="255"/><br/>
+            <div class="button-container">
+                <button id="randomColorTxt" type="button">Randomize!</button><br/>
+            </div>
         </div>
-        <br/>
     </div>
     <div id="button-box">
         <button type="button" id="fancy-button">Fancy Button</button>

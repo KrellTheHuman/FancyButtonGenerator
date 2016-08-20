@@ -1,7 +1,6 @@
-
 // update output box
 var updateOutput = function () {
-    var cornerType = $("input:radio[name='corner-option']:checked").val();
+    var cornerType = $("#corner-option").val() || "square";
     var redButton = $("#redbtn-amount").val() || 255;
     var greenButton = $("#greenbtn-amount").val() || 255;
     var blueButton = $("#bluebtn-amount").val() || 255;
@@ -9,7 +8,7 @@ var updateOutput = function () {
     var greenText = $("#greentxt-amount").val() || 0;
     var blueText = $("#bluetxt-amount").val() || 0;
     var fontSize = $("#text-size").val() || 20;
-    var buttonText = $("#button-text").val()|| "Click Me";
+    var buttonText = $("#button-text").val() || "Click Me";
     var fancyButton = $("#fancy-button");
     var buttonSize = $("#button-size").val() || "button-small";
     fancyButton.css("background-color", "rgb(" + redButton + ", " + greenButton + ", " + blueButton + ")");
@@ -36,6 +35,28 @@ var updateOutput = function () {
 
     $("#output").val(fancyButton[0].outerHTML);
 };
+
+// randomize colors
+var randomNum = function (min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+var randomColorBtn = function () {
+    $("#redbtn-amount").val(randomNum(0, 255));
+    $("#greenbtn-amount").val(randomNum(0, 255));
+    $("#bluebtn-amount").val(randomNum(0, 255));
+    updateOutput();
+};
+$("#randomColorBtn").on("click", randomColorBtn);
+
+var randomColorTxt = function () {
+    $("#redtxt-amount").val(randomNum(0, 255));
+    $("#greentxt-amount").val(randomNum(0, 255));
+    $("#bluetxt-amount").val(randomNum(0, 255));
+    updateOutput();
+};
+$("#randomColorTxt").on("click", randomColorTxt);
 
 // when user clicks anywhere in body, update output
 $("body").on("change", function () {
