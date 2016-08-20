@@ -71,3 +71,7 @@ button {
 textarea {
     border-radius: 12px;
 }
+
+textarea:focus {
+    outline: none;
+}

@@ -34,7 +34,7 @@ var updateOutput = function () {
         fancyButton.css("height", fancyButton.css("width"));
     }
 
-    $("#output").val($("#fancy-button")[0].outerHTML);
+    $("#output").val(fancyButton[0].outerHTML);
 };
 
 // when user clicks anywhere in body, update output
@@ -44,7 +44,8 @@ $("body").on("change", function () {
 
 var postMessage = function (msg) {
     var message = $("#message");
-    message.append(msg);
+    message.text(msg);
+    message.show();
     message.fadeOut(3000, function () {
         message.text("");
         message.show();
@@ -58,7 +59,10 @@ $("#copy-to-clipboard").on("click", function () {
     output.setSelectionRange(0, output.value.length);
     document.execCommand("copy");
     output.setSelectionRange();
+    var outputBox = $("#output");
+    outputBox.fadeOut(100);
     postMessage("Copied to Clipboard");
+    outputBox.fadeIn(200);
 });
 
 updateOutput();
